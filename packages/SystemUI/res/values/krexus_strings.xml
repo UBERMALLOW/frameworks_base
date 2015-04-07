@@ -69,4 +69,7 @@
 
     <!-- Screen timeout tile -->
     <string name="quick_settings_screen_off">Screen off</string>
+
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Sound</string>
 </resources>
