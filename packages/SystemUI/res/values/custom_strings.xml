@@ -46,4 +46,29 @@
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
+    <!-- Screen timeout tile -->
+    <string name="quick_settings_timeout_label">Timeout</string>
+    <string name="quick_settings_screen_timeout_detail_title">Screen timeout</string>
+
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync_label">Sync</string>
+    <!-- Content description of the sync tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
+    <!-- Content description of the sync tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
+
+    <!-- Announcement made when sync changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
+    <!-- Announcement made when sync changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+
+    <!-- Screen timeout tile -->
+    <string name="quick_settings_screen_off">Screen off</string>
+
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Sound</string>
+    <string name="quick_settings_sound_ring">Ring</string>
+    <string name="quick_settings_sound_vibrate">Vibrate</string>
+    <string name="quick_settings_sound_silent">Silent</string>
 </resources>
