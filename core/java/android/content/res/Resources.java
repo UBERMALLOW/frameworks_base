@@ -2540,9 +2540,10 @@ public class Resources {
         // attributes.
         final ConstantState cs;
         if (isColorDrawable) {
-            cs = sPreloadedColorDrawables.get(key);
+            cs = mAssets.hasThemedAssets() ? null : sPreloadedColorDrawables.get(key);
         } else {
-            cs = sPreloadedDrawables[mConfiguration.getLayoutDirection()].get(key);
+            cs = mAssets.hasThemedAssets() ? null :
+                 sPreloadedDrawables[mConfiguration.getLayoutDirection()].get(key);
         }
 
         Drawable dr;
@@ -2680,7 +2681,7 @@ public class Resources {
         if (value.type >= TypedValue.TYPE_FIRST_COLOR_INT
                 && value.type <= TypedValue.TYPE_LAST_COLOR_INT) {
             final android.content.res.ConstantState<ColorStateList> factory =
-                    sPreloadedColorStateLists.get(key);
+                    mAssets.hasThemedAssets() ? null : sPreloadedColorStateLists.get(key);
             if (factory != null) {
                 return factory.newInstance();
             }
@@ -2704,7 +2705,7 @@ public class Resources {
         }
 
         final android.content.res.ConstantState<ColorStateList> factory =
-                sPreloadedColorStateLists.get(key);
+                mAssets.hasThemedAssets() ? null : sPreloadedColorStateLists.get(key);
         if (factory != null) {
             csl = factory.newInstance(this, theme);
         }
